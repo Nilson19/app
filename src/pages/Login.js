@@ -10,7 +10,7 @@ export default class Login extends Component {
     }
 
     onSubmit = (event) => {
-        this.crearUsuario(this.state.correo, parseInt(this.state.cedula, 10));
+        this.signIn(this.state.correo, parseInt(this.state.cedula, 10));
         event.preventDefault();
     }
 
@@ -21,7 +21,7 @@ export default class Login extends Component {
         });
     }
 
-    crearUsuario(correo, cedula) {
+    signIn(correo, cedula) {
         const mensaje = {
             correo,
             cedula
@@ -43,13 +43,13 @@ export default class Login extends Component {
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <i className="medium material-icons">chrome_reader_mode</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput" placeholder="identificacion" value={this.state.correo} name="correo"/>
+                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput" placeholder="correo" value={this.state.correo} name="correo"/>
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>
-                            <input onChange={this.onChange} type="password" className="form-control" id="formGroupExampleInput2" placeholder="Nombre" value={this.state.cedula} name="cedula" />
+                            <input onChange={this.onChange} type="password" className="form-control" id="formGroupExampleInput2" placeholder="password" value={this.state.cedula} name="cedula" />
                         </div>
-                        <button type="submit" className="btn btn-outline-primary">Registrar</button>  
+                        <button type="submit" className="btn btn-outline-primary">Iniciar</button>  
                     </form>
                 </div>
             </div>
