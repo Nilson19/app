@@ -50,7 +50,7 @@ export default class registroEs extends Component {
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <i className="medium material-icons">chrome_reader_mode</i>
-                            <input onChange={this.onChange} type="numeric" className="form-control" id="formGroupExampleInput" placeholder="cedula" value={this.state.cedula} name="cedula"/>
+                            <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="cedula" value={this.state.cedula} name="cedula"/>
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>
@@ -62,11 +62,11 @@ export default class registroEs extends Component {
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="correo" value={this.state.correo} name="correo" />
+                            <input onChange={this.onChange} type="email" className="form-control" id="formGroupExampleInput2" placeholder="correo" value={this.state.correo} name="correo" />
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>
-                            <input onChange={this.onChange} type="numeric" className="form-control" id="formGroupExampleInput2" placeholder="celular" value={this.state.celular} name="celular" />
+                            <input onChange={this.onChange} type="tel" className="form-control" id="formGroupExampleInput2" placeholder="celular" value={this.state.celular} name="celular" />
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>

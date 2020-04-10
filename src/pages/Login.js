@@ -43,7 +43,7 @@ export default class Login extends Component {
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <i className="medium material-icons">chrome_reader_mode</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput" placeholder="correo" value={this.state.correo} name="correo"/>
+                            <input onChange={this.onChange} type="email" className="form-control" id="formGroupExampleInput" placeholder="correo" value={this.state.correo} name="correo"/>
                         </div>
                         <div className="form-group">
                             <i className="medium material-icons">account_box</i>
