@@ -1,6 +1,8 @@
 .contenedor0{
     display: flex;
     flex-direction: row;
+    align-content: center;
+    justify-content: center;
     border: 5px solid black;
     height: 900px;
 }
@@ -14,16 +16,6 @@
     border: 5px solid black;
 }
 
-.contenedor2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    border: 5px solid black;
-    
-}
-
 .form{
     display: flex;
     flex-direction: column;
@@ -32,9 +24,19 @@
     width: 80%;
 }
 
+.form *{
+    margin: 1%;
+}
+
 .form-group{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    border: 5px solid black;
+
+}
+
+.comboBox {
+    width: 100%;
 }
