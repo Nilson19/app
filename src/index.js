@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import registroEs from './pages/registroEs';
 import registroSchools from './pages/registroSchools';
 import registroPro from './pages/registroPro';
+import registroClass from './pages/registroClass';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Route path="/registroEs" component={registroEs}></Route>
     <Route path="/registroSchool" component={registroSchools}></Route>
     <Route path="/registroPro" component={registroPro}></Route>
+    <Route path="/registroClass" component={registroClass}></Route>
   </Router>,
   document.getElementById('root')
 );
