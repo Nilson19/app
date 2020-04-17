@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import './Login.css';
+import './css/Login.css';
+import { Link } from 'react-router-dom';
 
 export default class Login extends Component {
 
@@ -41,7 +42,7 @@ export default class Login extends Component {
                 </div>
                 <div className="contenedor2">
                     <form className = "form" onSubmit={this.onSubmit}>
-                        <div className="form-group">
+                        <div className="form-group" id="form-group1">
                             <i className="medium material-icons">chrome_reader_mode</i>
                             <input onChange={this.onChange} type="email" className="form-control" id="formGroupExampleInput" placeholder="correo" value={this.state.correo} name="correo"/>
                         </div>
@@ -49,8 +50,10 @@ export default class Login extends Component {
                             <i className="medium material-icons">account_box</i>
                             <input onChange={this.onChange} type="password" className="form-control" id="formGroupExampleInput2" placeholder="password" value={this.state.cedula} name="cedula" />
                         </div>
-                        <button type="submit" className="btn btn-outline-primary">Iniciar</button>  
+                        <button type="submit" className="btn btn-outline-primary">Iniciar</button> 
+                        <Link to='/registroEs'>Registrate ahora</Link> 
                     </form>
+                    
                 </div>
             </div>
         )

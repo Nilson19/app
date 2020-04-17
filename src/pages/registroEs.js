@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Select from 'react-select';
 import axios from 'axios';
+
+import './css/registroEs.css';
 
 export default class registroEs extends Component {
 
@@ -9,14 +12,20 @@ export default class registroEs extends Component {
         apellido: '',
         correo: '',
         celular: '',
-        sexo: ''
+        sexo: '',
     }
 
     onChange = (event) => {
         this.setState({
-            [event.target.name] : event.target.value,
- 
+            [event.target.name] : event.target.value
          });
+    }
+
+    handleOnChange = (newValue) =>{
+        this.setState({
+            sexo: newValue.value
+         });
+         console.log(this.state.sexo)
     }
 
     onSubmit = (event) => {
@@ -27,6 +36,7 @@ export default class registroEs extends Component {
         parseInt(this.state.celular, 10), 
         this.state.sexo);
         event.preventDefault();
+        console.log(this.state.sexo)
     }
 
     signUp(cedula, nombre, apellido, correo, celular, sexo) {
@@ -44,6 +54,10 @@ export default class registroEs extends Component {
     }
 
     render() {
+        const options =[
+            {value: 'Masculino', label: 'Masculino'},
+            {value:'Femenino', label: 'Femenino'}
+        ]
         return (
             <div className="contenedor0">
                 <div className="contenedor1">
@@ -69,9 +83,9 @@ export default class registroEs extends Component {
                             <input onChange={this.onChange} type="tel" className="form-control" id="formGroupExampleInput2" placeholder="celular" value={this.state.celular} name="celular" />
                         </div>
                         <div className="form-group">
-                            <i className="medium material-icons">account_box</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="sexo" value={this.state.sexo} name="sexo" />
+                            <Select className="comboBox" onChange={this.handleOnChange} options={options}  placeholder="Seleccione su sexo" />
                         </div>
+                        
                         <button type="submit" className="btn btn-outline-primary">Registrar</button>  
                     </form>
                 </div>
