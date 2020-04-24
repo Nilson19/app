@@ -3,6 +3,11 @@
     flex-direction: row;
     border: 5px solid black;
     height: 900px;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 .contenedor1{
@@ -11,7 +16,6 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: 5px solid black;
 }
 
 .contenedor2{
@@ -30,6 +34,9 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    background-color: #223B57;
+    border: 5px solid #969191;
+    border-radius: 20px;
 }
 
 .form *{

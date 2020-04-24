@@ -29,7 +29,7 @@ export default class registroClass extends Component {
 
     onChange = (event) => {
         this.setState({
-            [event.target.name] : event.target.value,
+            [event.target.name] : event.target.value
  
          });
     }
@@ -38,6 +38,7 @@ export default class registroClass extends Component {
         this.setState({
             escuela: newValue.value
          });
+         console.log(this.state.escuela);
     }
 
     onSubmit = (event) => {
@@ -66,21 +67,21 @@ export default class registroClass extends Component {
                 <div className = "contenedor1">
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <i className="medium material-icons">chrome_reader_mode</i>
+                            <i className="medium material-icons">looks_one</i>
                             <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="codigo" value={this.state.codigo} name="codigo"/>
                         </div>
                         <div className="form-group">
                             <Select className="comboBox" onChange={this.handleOnChange1} options={this.state.options} placeholder="Seleccione una escuela" />
                         </div>
                         <div className="form-group">
-                            <i className="medium material-icons">account_box</i>
+                            <i className="medium material-icons">looks_3</i>
                             <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="nombre" value={this.state.nombre} name="nombre" />
                         </div>
                         <div className="form-group">
-                            <i className="medium material-icons">account_box</i>
-                            <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput2" placeholder="creditos" value={this.state.nombre} name="creditos" />
+                            <i className="medium material-icons">looks_4</i>
+                            <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput2" placeholder="creditos" value={this.state.creditos} name="creditos" />
                         </div>
-                        <button type="submit" className="btn btn-outline-primary">Registrar</button>  
+                        <button type="submit" className="btn btn-outline blue darken-4">Registrar</button>  
                     </form>
                 </div>
             </div>
