@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './css/registroClass.css';
 
-export default class registroClass extends Component {
+export default class RegistroClass extends Component {
 
     state = {
         codigo: '',

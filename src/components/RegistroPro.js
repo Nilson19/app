@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './css/registroPro.css';
 
-export default class registroPro extends Component {
+export default class RegistroPro extends Component {
 
     state = {
         cedula: '',
