@@ -7,6 +7,7 @@ import './index.css';
 import Login from './pages/Login';
 import interfazUs from './pages/interfazUs';
 import interfazAdmin from './pages/interfazAdmin';
+import RegistroEs from './components/RegistroEs';
 
 
 
@@ -16,6 +17,7 @@ ReactDOM.render(
   <Router history={history}>
     <Route exact path="/" component={Login}></Route>
     <Route path="/interfazUs" component={interfazUs}></Route>
+    <Route path="/registroEs" component={RegistroEs}></Route>
     <Route path="/interfazAdmin" component={interfazAdmin}></Route>
   </Router>,
   document.getElementById('root')
