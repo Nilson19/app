@@ -7,11 +7,11 @@
     height: 900px;
 }
 
-.contenedor1{
+.contenedor5{
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 50%;
 }
 

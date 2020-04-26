@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 
-import './css/registroClass.css';
+import './css/registroEs.css';
 
 export default class RegistroClass extends Component {
 
@@ -64,7 +64,8 @@ export default class RegistroClass extends Component {
     render() {
         return (
             <div className = "contenedor0">
-                <div className = "contenedor1">
+                <div className = "contenedor5">
+                    <h3>Registro de materias</h3>
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <i className="medium material-icons">looks_one</i>

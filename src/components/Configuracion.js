@@ -54,6 +54,7 @@ export default class Configuracion extends Component {
         ]
         return (
             <div className="configuracion">
+                <h3>Actualizacion de datos personales</h3>
                 <form className = "form" onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <i className="medium material-icons">account_box</i>

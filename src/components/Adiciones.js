@@ -96,6 +96,7 @@ class Adiciones extends Component {
     render() {
         return (
             <div className="adiciones">
+                <h3>Matricula de materias</h3>
                 <form className = "form" onSubmit={this.onSubmit} id="form">
                     <div className="form-group">
                         <Select className="comboBox" onChange={this.handleOnChange} options={this.state.escuelas}  placeholder="Seleccione una escuela" />

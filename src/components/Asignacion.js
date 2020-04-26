@@ -78,7 +78,8 @@ export default class Asignacion extends Component {
     render() {
         return (
             <div className="contenedor0">
-                <div className="contenedor1">
+                <div className="contenedor5">
+                    <h3>Registro de asignaciones</h3>
                     <form className = "form" onSubmit={this.onSubmit}>
                     <div className="form-group">
                             <Select className="comboBox" onChange={this.handleOnChange1} options={this.state.materias} placeholder="Seleccione una materia" />

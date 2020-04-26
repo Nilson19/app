@@ -61,7 +61,8 @@ export default class RegistroEs extends Component {
         ]
         return (
             <div className="contenedor0">
-                <div className="contenedor1">
+                <div className="contenedor5">
+                    <h3>Registro de estudiantes</h3>
                     <form className = "form" onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <i className="medium material-icons">looks_one</i>

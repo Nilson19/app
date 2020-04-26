@@ -3,6 +3,7 @@
 }
 #row{
     height: 100%;
+    margin: 0;
 }
 #left{
     width: 20%;
