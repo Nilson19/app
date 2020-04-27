@@ -22,9 +22,11 @@
 
 .tabs{
     height: 100%;
-    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
 }
 .tab{
+    max-height: min-content;
     display: column;
     width: 100%;
     border-bottom: 1px solid #f0f0f0;
