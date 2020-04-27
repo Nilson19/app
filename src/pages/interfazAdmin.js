@@ -34,10 +34,10 @@ export default class interfazAdmin extends Component {
                         </ul>
                     </div>
                     <div className="col s10 m10 l10" id="rigth">
-                        <div id="test1"><RegistroSchools /></div>
-                        <div id="test2"><RegistroPro /></div>
-                        <div id="test3"><RegistroClass /></div>
-                        <div id="test4"><Asignacion /></div>
+                        <div className="contenido-tab" id="test1"><RegistroSchools /></div>
+                        <div className="contenido-tab" id="test2"><RegistroPro /></div>
+                        <div className="contenido-tab" id="test3"><RegistroClass /></div>
+                        <div className="contenido-tab" id="test4"><Asignacion /></div>
                     </div>
                 </div>
             </div>

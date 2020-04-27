@@ -86,7 +86,7 @@ export default class RegistroPro extends Component {
             {value: 'Femenino', label: 'Femenino'}
         ]
         return (
-            <div className="container">
+            <div className="container" id="container">
                 <h3>Registro de profesores</h3>
                 <form className = "form" onSubmit={this.onSubmit}>
                     <div className="form-group">

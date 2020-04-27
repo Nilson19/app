@@ -34,7 +34,7 @@ export default class RegistroSchools extends Component {
 
     render() {
         return (
-            <div className = "container">
+            <div className = "container" id="container">
                 <h3>Registro de escuelas</h3>
                 <form className = "form" onSubmit={this.onSubmit}>
                     <div className="form-group">

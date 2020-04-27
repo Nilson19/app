@@ -64,7 +64,7 @@ export default class RegistroClass extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container" id="container">
                 <h3>Registro de materias</h3>
                 <form className="form" onSubmit={this.onSubmit}>
                     <div className="form-group">
