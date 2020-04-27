@@ -86,44 +86,44 @@ export default class RegistroPro extends Component {
             {value: 'Femenino', label: 'Femenino'}
         ]
         return (
-            <div className="contenedor0">
-                <div className="contenedor5">
-                    <h3>Registro de profesores</h3>
-                    <form className = "form" onSubmit={this.onSubmit}>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_one</i>
-                            <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="cedula" value={this.state.cedula} name="cedula"/>
-                        </div>
-                        <div className="form-group">
-                            <Select className="comboBox" onChange={this.handleOnChange1} options={this.state.options} placeholder="Seleccione una escuela" />
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_3</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="nombre" value={this.state.nombre} name="nombre" />
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_4</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="apellido" value={this.state.apellido} name="apellido" />
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_5</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="titulo" value={this.state.titulo} name="titulo" />
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_6</i>
-                            <input onChange={this.onChange} type="email" className="form-control" id="formGroupExampleInput2" placeholder="correo" value={this.state.correo} name="correo" />
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">add_ic_call</i>
-                            <input onChange={this.onChange} type="tel" className="form-control" id="formGroupExampleInput2" placeholder="celular" value={this.state.celular} name="celular" />
-                        </div>
-                        <div className="form-group">
-                            <Select className="comboBox" onChange={this.handleOnChange} options={options} placeholder="Seleccione su sexo"  />
-                        </div>
+            <div className="container">
+                <h3>Registro de profesores</h3>
+                <form className = "form" onSubmit={this.onSubmit}>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_one</i>
+                        <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="cedula" value={this.state.cedula} name="cedula"/>
+                    </div>
+                    <div className="form-group">
+                        <Select className="comboBox" onChange={this.handleOnChange1} options={this.state.options} placeholder="Seleccione una escuela" />
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_3</i>
+                        <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="nombre" value={this.state.nombre} name="nombre" />
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_4</i>
+                        <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="apellido" value={this.state.apellido} name="apellido" />
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_5</i>
+                        <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="titulo" value={this.state.titulo} name="titulo" />
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_6</i>
+                        <input onChange={this.onChange} type="email" className="form-control" id="formGroupExampleInput2" placeholder="correo" value={this.state.correo} name="correo" />
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">add_ic_call</i>
+                        <input onChange={this.onChange} type="tel" className="form-control" id="formGroupExampleInput2" placeholder="celular" value={this.state.celular} name="celular" />
+                    </div>
+                    <div className="form-group">
+                        <Select className="comboBox" onChange={this.handleOnChange} options={options} placeholder="Seleccione su sexo"  />
+                    </div>
+                    <div className="form-group">
                         <button type="submit" className="btn btn-outline blue darken-4">Registrar</button>  
-                    </form>
-                </div>
-            </div>
+                    </div>    
+                </form>
+             </div>
         )
     }
 }

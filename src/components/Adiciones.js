@@ -95,7 +95,7 @@ class Adiciones extends Component {
 
     render() {
         return (
-            <div className="adiciones">
+            <div className="container">
                 <h3>Matricula de materias</h3>
                 <form className = "form" onSubmit={this.onSubmit} id="form">
                     <div className="form-group">

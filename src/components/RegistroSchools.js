@@ -34,21 +34,21 @@ export default class RegistroSchools extends Component {
 
     render() {
         return (
-            <div className = "contenedor0">
-                <div className = "contenedor5">
-                    <h3>Registro de escuelas</h3>
-                    <form className = "form" onSubmit={this.onSubmit}>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_one</i>
-                            <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="codigo" value={this.state.codigo} name="codigo"/>
-                        </div>
-                        <div className="form-group">
-                            <i className="medium material-icons">looks_two</i>
-                            <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="nombre" value={this.state.nombre} name="nombre" />
-                        </div>
-                        <button type="submit" className="btn btn-outline blue darken-4">Registrar</button>  
-                    </form>
-                </div>
+            <div className = "container">
+                <h3>Registro de escuelas</h3>
+                <form className = "form" onSubmit={this.onSubmit}>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_one</i>
+                        <input onChange={this.onChange} type="number" className="form-control" id="formGroupExampleInput" placeholder="codigo" value={this.state.codigo} name="codigo"/>
+                    </div>
+                    <div className="form-group">
+                        <i className="medium material-icons">looks_two</i>
+                        <input onChange={this.onChange} type="text" className="form-control" id="formGroupExampleInput2" placeholder="nombre" value={this.state.nombre} name="nombre" />
+                    </div>
+                    <div className="form-group">
+                        <button type="submit" className="btn btn-outline blue darken-4">Registrar</button>
+                    </div>  
+                </form>
             </div>
         )
     }

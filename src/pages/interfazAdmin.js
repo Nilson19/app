@@ -18,7 +18,7 @@ export default class interfazAdmin extends Component {
         return (
             <div className="interfazUs">
                 <div className="row" id="row">
-                    <div className="col m4" id="left">
+                    <div className="col s2 m2 l2" id="left">
                         <ul className="tabs">
                         <li className="datosCuenta">
                                 <div className="imagen">
@@ -33,7 +33,7 @@ export default class interfazAdmin extends Component {
                             <li className="tab"><i><Link to="/"><i class="material-icons">power_settings_new</i></Link></i></li>
                         </ul>
                     </div>
-                    <div className="col m8" id="rigth">
+                    <div className="col s10 m10 l10" id="rigth">
                         <div id="test1"><RegistroSchools /></div>
                         <div id="test2"><RegistroPro /></div>
                         <div id="test3"><RegistroClass /></div>

@@ -6,34 +6,40 @@
     margin: 0;
 }
 #left{
-    width: 20%;
     height: 100%;
-    border: 5px solid #969191;
-    background-color: #0F2E51;    
-}
-#left *{
-    background-color: #0F2E51; 
+    border-right: 5px solid #969191;
+    padding: 0;   
 }
 #rigth{
-    width: 80%;
-    height: 100%;
-    background-color: #124681;
+    padding: 0; 
+}
+
+.contenido-tab{
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 
 .tabs{
-    height: auto;
+    height: 100%;
     white-space: normal;
+    background-color:;
 }
 .tab{
     display: block;
     width: 100%;
     border-bottom: 1px solid #f0f0f0;
 }
-.tab-content{
-    height: 200px;
-    width: 100%;
-    background: #fcfcfc;
-    border:1px solid #f0f0f0;
+.tabs .tab a{
+    color: #6BA0D5;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #043D75;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #92BAE2;
+    outline: none;
 }
 .indicator{
     display: none;

@@ -53,7 +53,7 @@ export default class Configuracion extends Component {
             {value:'Femenino', label: 'Femenino'}
         ]
         return (
-            <div className="configuracion">
+            <div className="container">
                 <h3>Actualizacion de datos personales</h3>
                 <form className = "form" onSubmit={this.onSubmit}>
                     <div className="form-group">
@@ -75,7 +75,9 @@ export default class Configuracion extends Component {
                     <div className="form-group">
                         <Select className="comboBox" onChange={this.handleOnChange} options={options}  placeholder="Seleccione su sexo" />
                     </div>
-                    <button type="submit" className="btn btn-outline blue darken-4">Actualizar datos</button>  
+                    <div className="form-group">
+                        <button type="submit" className="btn btn-outline blue darken-4">Actualizar datos</button>  
+                    </div>   
                 </form>
             </div>
         )
