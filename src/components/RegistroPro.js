@@ -60,7 +60,6 @@ export default class RegistroPro extends Component {
         this.state.correo, 
         parseInt(this.state.celular, 10), 
         this.state.sexo);
-        this.rellenarSelect();
         event.preventDefault();
     }
 

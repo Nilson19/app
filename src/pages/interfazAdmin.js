@@ -22,15 +22,15 @@ export default class interfazAdmin extends Component {
                         <ul className="tabs">
                         <li className="datosCuenta">
                                 <div className="imagen">
-                                <i class="large material-icons">account_circle</i>
+                                <i className="large material-icons">account_circle</i>
                                 </div>
                                 <h6>Admin</h6>
                             </li>
-                            <li class="tab"><a href="#test1">Escuelas</a></li>
-                            <li class="tab"><a  href="#test2">Profesores</a></li>
-                            <li class="tab"><a href="#test3">Clases</a></li>
-                            <li class="tab"><a href="#test4">Asignaciones</a></li>
-                            <li className="tab"><i><Link to="/"><i class="material-icons">power_settings_new</i></Link></i></li>
+                            <li className="tab"><a href="#test1">Escuelas</a></li>
+                            <li className="tab"><a  href="#test2">Profesores</a></li>
+                            <li className="tab"><a href="#test3">Clases</a></li>
+                            <li className="tab"><a href="#test4">Asignaciones</a></li>
+                            <li className="tab"><i><Link to="/"><i className="material-icons">power_settings_new</i></Link></i></li>
                         </ul>
                     </div>
                     <div className="col s10 m10 l10" id="rigth">
