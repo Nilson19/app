@@ -23,10 +23,9 @@
 .tabs{
     height: 100%;
     white-space: normal;
-    background-color:;
 }
 .tab{
-    display: block;
+    display: column;
     width: 100%;
     border-bottom: 1px solid #f0f0f0;
 }
